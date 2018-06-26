@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Block Element Modifier example</title>
+
+<style>
+
+/* Block */
+.container {
+    padding: 10px;
+    background: black;
+}
+
+/* Element */
+.container__element {
+    height: 100px;
+    background: lightblue;
+    margin-bottom: 10px;
+}
+
+/* Modifier */
+.container__element--highlight {
+    background: lightgray;
+    margin-bottom: 0px;
+}
+
+</style>
+
+</head>
+<body>
+
+<section class="container”>
+  <div class="container__element"></div>
+  <div class="container__element"></div>
+  <div class="container__element container__element--highlight"></div>
+</section>
+
+</body>
+</html>
